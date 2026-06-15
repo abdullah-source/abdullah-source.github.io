@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdullah Ali — CS + Math @ Harvey Mudd</title>
+  <meta name="description" content="Abdullah Ali — Computer Science and Mathematics undergraduate at Harvey Mudd College. I build AI, ML, and quant systems and ship them to production." />
+
+  <!-- Open Graph (how the link looks when shared) -->
+  <meta property="og:title" content="Abdullah Ali" />
+  <meta property="og:description" content="CS + Math @ Harvey Mudd. I build AI, ML, and quant systems and ship them to production." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- If JavaScript is off, never hide content behind the scroll-reveal. -->
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+  <!-- ============================ NAV ============================ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">AA</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ============================ HERO ============================ -->
+  <main id="top">
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow reveal">Computer Science + Mathematics · Harvey Mudd College</p>
+        <h1 class="hero__title reveal">Abdullah Ali</h1>
+        <p class="hero__lead reveal">
+          I build AI, ML, and quant systems, and I ship them to production.
+          Currently a research intern at the Harvey Mudd Entrepreneurship Studio,
+          building <strong>Lighthouse</strong>.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#projects" class="btn btn--primary">View projects</a>
+          <a href="https://github.com/abdullah-source" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+          <a href="mailto:abali@g.hmc.edu" class="btn btn--ghost">Email</a>
+        </div>
+        <ul class="hero__meta reveal">
+          <li><span>📍</span> Claremont, CA · from Lahore, Pakistan</li>
+          <li><span>🎓</span> B.S. expected May 2029</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about">
+        <p>
+          I am an undergraduate at Harvey Mudd College studying Computer Science
+          and Mathematics. I am an international student from Lahore, Pakistan, and
+          I came to Mudd on a full merit scholarship.
+        </p>
+        <p>
+          I like building real things end to end: from the data structures and the
+          model up to the API, the deploy pipeline, and the dashboards that watch it
+          in production. Lately that means LLM systems, machine-learning pipelines,
+          quantitative trading research, and the cloud infrastructure that runs all
+          of it.
+        </p>
+        <p class="about__belief">
+          I care more about conviction than validation, and more about execution
+          than the idea.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================ SKILLS ============================ -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title">Technical skills</h2>
+      </div>
+      <div class="skills">
+        <div class="skill-card reveal">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li><li>Java</li><li>Go</li><li>TypeScript</li>
+            <li>SQL</li><li>JavaScript</li><li>Racket</li><li>HTML / CSS</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>AI / ML &amp; Data</h3>
+          <ul>
+            <li>scikit-learn</li><li>NumPy</li><li>Pandas</li><li>LLM orchestration</li>
+            <li>Retrieval-Augmented Generation</li><li>Feature engineering</li>
+            <li>Time-series analysis</li><li>NLP preprocessing</li><li>Vectorization</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Backend &amp; Web</h3>
+          <ul>
+            <li>FastAPI</li><li>Django</li><li>REST API design</li><li>Vue.js</li>
+            <li>Microservices</li><li>SQLite</li><li>Async programming</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Cloud &amp; DevOps</h3>
+          <ul>
+            <li>Docker</li><li>AWS (ECS / Fargate)</li><li>Terraform</li>
+            <li>GitHub Actions CI/CD</li><li>Prometheus</li><li>Grafana</li>
+            <li>Qdrant</li><li>Git / GitHub</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Foundations</h3>
+          <ul>
+            <li>Data structures &amp; algorithms</li><li>Object-oriented programming</li>
+            <li>Infrastructure as code</li><li>Observability</li><li>API design</li>
+            <li>Data analytics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ EXPERIENCE ============================ -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-when">Jun 2026 – Present</div>
+          <div class="tl-body">
+            <h3>Research Intern <span class="tl-org">· Harvey Mudd College, Entrepreneurship Studio</span></h3>
+            <p>
+              Conducting research under faculty supervision while building
+              <strong>Lighthouse</strong>, an LLM visibility and AI-recommendation
+              measurement tool. It probes frontier models like GPT and Claude
+              across buyer-intent queries, parses brand-mention data, and produces
+              visibility reports at roughly $0.13 per run. The thesis: AI visibility
+              is engineered, not earned.
+            </p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-when">Dec 2025 – Jan 2026</div>
+          <div class="tl-body">
+            <h3>Cloud Application Development Intern <span class="tl-org">· Systems Limited</span></h3>
+            <p>
+              Built scalable Python/Django backends for cloud-hosted applications,
+              serving multiple production endpoints with optimized ORM data models,
+              and set up CI/CD pipelines to automate testing and deployment across
+              environments.
+            </p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-when">Nov 2025 – Jan 2026</div>
+          <div class="tl-body">
+            <h3>Software Engineering Intern <span class="tl-org">· Brainstorm</span></h3>
+            <p>
+              Built responsive frontend interfaces in Vue.js and TypeScript with
+              component-based state management, and evaluated interface architectures
+              to remove access bottlenecks and improve content discoverability.
+            </p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-when">May 2025 – Present</div>
+          <div class="tl-body">
+            <h3>Core Curriculum Developer <span class="tl-org">· The International School of Cordoba</span></h3>
+            <p>
+              Modernized curriculum for 700+ students by analyzing five years of
+              coursework data to integrate Python and applied-math modules, and
+              secured government funding to establish STEM labs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PROJECTS ============================ -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Projects</h2>
+      </div>
+
+      <article class="feature reveal">
+        <div class="feature__text">
+          <span class="badge">Flagship · in development</span>
+          <h3>Lighthouse</h3>
+          <p>
+            An LLM visibility and AI-recommendation measurement tool. Lighthouse
+            probes GPT and Claude across buyer-intent queries, parses brand-mention
+            data, and produces visibility reports at about $0.13 per run. Built as
+            both a startup and a research project at the HMC Entrepreneurship Studio.
+          </p>
+          <ul class="tags">
+            <li>LLM orchestration</li><li>Python</li><li>Async</li><li>Evaluation</li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="grid">
+        <article class="card reveal">
+          <h3>Anchor RAG</h3>
+          <p>
+            A production-shaped Retrieval-Augmented Generation service. Swappable
+            embeddings, vector store, and LLM behind one interface. Runs fully
+            offline with no keys, and switches to OpenAI/Anthropic + Qdrant by
+            changing environment variables only.
+          </p>
+          <ul class="tags"><li>FastAPI</li><li>NumPy</li><li>Qdrant</li><li>RAG</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/anchor-rag" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>QuantForge</h3>
+          <p>
+            A leakage-safe machine-learning backtesting engine. Walk-forward
+            validation, realistic trade timing and costs, and quant metrics
+            (Sharpe, drawdown, hit rate). It finds a planted edge and correctly
+            finds none on a random walk.
+          </p>
+          <ul class="tags"><li>Pandas</li><li>scikit-learn</li><li>Backtesting</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/Quantforge" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Anchor Infra</h3>
+          <p>
+            Infrastructure as code that deploys and monitors Anchor RAG on AWS:
+            Terraform VPC, ECS Fargate behind a load balancer with autoscaling,
+            CI/CD via GitHub Actions with OIDC (no stored keys), and a
+            Prometheus + Grafana stack.
+          </p>
+          <ul class="tags"><li>Terraform</li><li>AWS</li><li>CI/CD</li><li>Observability</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/anchor-infra" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>AlgoTradeX</h3>
+          <p>
+            A modular quantitative trading system with real-time market-data
+            aggregation via CCXT, vectorized technical indicators, and a full
+            paper-trading simulation engine with PnL tracking and risk logic.
+          </p>
+          <ul class="tags"><li>Python</li><li>Pandas</li><li>CCXT</li><li>Time-series</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>QuantBridge</h3>
+          <p>
+            A hybrid microservices system pairing Python (scikit-learn) for
+            predictive modeling with Go/TypeScript services for low-latency
+            inference, plus full-stack analytics dashboards in Django and Vue.
+          </p>
+          <ul class="tags"><li>Python</li><li>Go</li><li>Django</li><li>ML</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>TextStat</h3>
+          <p>
+            A high-performance NLP pipeline implementing tokenization,
+            normalization, and term-frequency analysis, with a modular design for
+            n-gram analysis and vocabulary dimensionality reduction.
+          </p>
+          <ul class="tags"><li>Python</li><li>NLP</li><li>Feature engineering</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================ HONORS ============================ -->
+    <section class="section" id="honors">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title">Honors</h2>
+      </div>
+      <ul class="honors">
+        <li><strong>O Level Valedictorian</strong><span>14 A / A* grades</span></li>
+        <li><strong>Director's Award for Excellence in IT</strong><span>ranked 1 of 3,600</span></li>
+        <li><strong>100% Merit Scholarship</strong><span>Harvey Mudd College</span></li>
+        <li><strong>IYMC Gold Medalist</strong><span>International Youth Math Challenge</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ============================ CONTACT / FOOTER ============================ -->
+  <footer class="footer" id="contact">
+    <h2 class="footer__title">Let's build something.</h2>
+    <p class="footer__sub">Open to internships, fellowships, and research collaborations.</p>
+    <div class="footer__links">
+      <a href="mailto:abali@g.hmc.edu">abali@g.hmc.edu</a>
+      <a href="https://github.com/abdullah-source" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> Abdullah Ali. Built from scratch, no template.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
