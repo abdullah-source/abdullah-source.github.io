@@ -216,61 +216,50 @@
         </div>
       </article>
 
+      <h3 class="cat reveal">AI, ML &amp; LLM systems</h3>
       <div class="grid">
         <article class="card reveal">
           <h3>Anchor RAG</h3>
           <p>
             A production-shaped Retrieval-Augmented Generation service. Swappable
-            embeddings, vector store, and LLM behind one interface. Runs fully
-            offline with no keys, and switches to OpenAI/Anthropic + Qdrant by
-            changing environment variables only.
+            embeddings, vector store, and LLM behind one interface; runs offline
+            with no keys, switches to OpenAI/Anthropic + Qdrant via env vars.
           </p>
-          <ul class="tags"><li>FastAPI</li><li>NumPy</li><li>Qdrant</li><li>RAG</li></ul>
+          <ul class="tags"><li>FastAPI</li><li>Qdrant</li><li>RAG</li></ul>
           <a class="card__link" href="https://github.com/abdullah-source/anchor-rag" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
 
         <article class="card reveal">
-          <h3>QuantForge</h3>
+          <h3>HNSW Vector Search</h3>
           <p>
-            A leakage-safe machine-learning backtesting engine. Walk-forward
-            validation, realistic trade timing and costs, and quant metrics
-            (Sharpe, drawdown, hit rate). It finds a planted edge and correctly
-            finds none on a random walk.
+            The approximate-nearest-neighbor algorithm inside vector databases,
+            implemented from scratch: a multi-layer navigable graph with greedy
+            search. Recall 1.0, examining only a few percent of the data per query.
           </p>
-          <ul class="tags"><li>Pandas</li><li>scikit-learn</li><li>Backtesting</li></ul>
-          <a class="card__link" href="https://github.com/abdullah-source/Quantforge" target="_blank" rel="noopener">View on GitHub →</a>
+          <ul class="tags"><li>Python</li><li>NumPy</li><li>Graphs</li><li>ANN</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/hnsw-vector-search" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
 
         <article class="card reveal">
-          <h3>Anchor Infra</h3>
+          <h3>LLM Eval Harness</h3>
           <p>
-            Infrastructure as code that deploys and monitors Anchor RAG on AWS:
-            Terraform VPC, ECS Fargate behind a load balancer with autoscaling,
-            CI/CD via GitHub Actions with OIDC (no stored keys), and a
-            Prometheus + Grafana stack.
+            Evaluate prompts and models on a dataset: exact/regex/numeric and
+            LLM-as-judge scorers, runs persisted to SQLite, regression detection
+            between runs, and a FastAPI dashboard.
           </p>
-          <ul class="tags"><li>Terraform</li><li>AWS</li><li>CI/CD</li><li>Observability</li></ul>
-          <a class="card__link" href="https://github.com/abdullah-source/anchor-infra" target="_blank" rel="noopener">View on GitHub →</a>
+          <ul class="tags"><li>FastAPI</li><li>LLM-as-judge</li><li>SQLite</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/llm-eval-harness" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
 
         <article class="card reveal">
-          <h3>AlgoTradeX</h3>
+          <h3>Tool Agent</h3>
           <p>
-            A modular quantitative trading system with real-time market-data
-            aggregation via CCXT, vectorized technical indicators, and a full
-            paper-trading simulation engine with PnL tracking and risk logic.
+            A tool-using LLM agent with a ReAct loop and real guardrails: a
+            capability allowlist, a path sandbox, an AST-based calculator (no
+            eval), and a step cap that guarantees termination.
           </p>
-          <ul class="tags"><li>Python</li><li>Pandas</li><li>CCXT</li><li>Time-series</li></ul>
-        </article>
-
-        <article class="card reveal">
-          <h3>QuantBridge</h3>
-          <p>
-            A hybrid microservices system pairing Python (scikit-learn) for
-            predictive modeling with Go/TypeScript services for low-latency
-            inference, plus full-stack analytics dashboards in Django and Vue.
-          </p>
-          <ul class="tags"><li>Python</li><li>Go</li><li>Django</li><li>ML</li></ul>
+          <ul class="tags"><li>Python</li><li>ReAct</li><li>Agent safety</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/tool-agent" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
 
         <article class="card reveal">
@@ -281,6 +270,145 @@
             n-gram analysis and vocabulary dimensionality reduction.
           </p>
           <ul class="tags"><li>Python</li><li>NLP</li><li>Feature engineering</li></ul>
+        </article>
+      </div>
+
+      <h3 class="cat reveal">Quantitative &amp; trading</h3>
+      <div class="grid">
+        <article class="card reveal">
+          <h3>Order Book Engine</h3>
+          <p>
+            A limit order book matching engine in C++20 with strict price-time
+            priority, O(1) cancel via an order index, and integer-tick prices.
+            ~7 million orders/sec on a laptop.
+          </p>
+          <ul class="tags"><li>C++20</li><li>Low-latency</li><li>Data structures</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/orderbook-engine" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>QuantForge</h3>
+          <p>
+            A leakage-safe ML backtesting engine: walk-forward validation,
+            realistic trade timing and costs, and quant metrics (Sharpe, drawdown,
+            hit rate). Finds a planted edge, correctly finds none on a random walk.
+          </p>
+          <ul class="tags"><li>scikit-learn</li><li>Backtesting</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/Quantforge" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Monte Carlo Options</h3>
+          <p>
+            Prices options by simulation with Greeks, variance reduction
+            (antithetic + control variates), and Longstaff-Schwartz for American
+            options, validated against the Black-Scholes closed form.
+          </p>
+          <ul class="tags"><li>NumPy</li><li>Probability</li><li>Derivatives</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/montecarlo-options" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Portfolio Optimizer</h3>
+          <p>
+            Mean-variance optimization: the efficient frontier, minimum-variance,
+            maximum-Sharpe, and risk-parity portfolios, with an Euler risk
+            decomposition and a backtest against equal weight.
+          </p>
+          <ul class="tags"><li>SciPy</li><li>Optimization</li><li>Risk</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/portfolio-optimizer" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Market Data Pipeline</h3>
+          <p>
+            A real-time streaming pipeline in asyncio: a pub/sub hub with explicit
+            backpressure and O(1) rolling analytics (VWAP, moving average,
+            volatility) with sigma-based event detection.
+          </p>
+          <ul class="tags"><li>asyncio</li><li>Streaming</li><li>Backpressure</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/market-data-pipeline" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>AlgoTradeX</h3>
+          <p>
+            A modular quantitative trading system with real-time market-data
+            aggregation via CCXT, vectorized technical indicators, and a full
+            paper-trading simulation engine with PnL tracking and risk logic.
+          </p>
+          <ul class="tags"><li>Python</li><li>CCXT</li><li>Time-series</li></ul>
+        </article>
+      </div>
+
+      <h3 class="cat reveal">Systems &amp; distributed</h3>
+      <div class="grid">
+        <article class="card reveal">
+          <h3>Raft KV</h3>
+          <p>
+            The Raft consensus algorithm from scratch in Go, backing a replicated
+            key-value store: leader election, log replication, and failover, tested
+            with a fault-injecting network (partitions, drops, latency).
+          </p>
+          <ul class="tags"><li>Go</li><li>Consensus</li><li>Distributed</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/raft-kv" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>LSM Storage</h3>
+          <p>
+            A log-structured merge-tree key-value engine in Go (the design inside
+            RocksDB/LevelDB): write-ahead log, sorted memtable, immutable SSTables,
+            and k-way-merge compaction that drops tombstones.
+          </p>
+          <ul class="tags"><li>Go</li><li>Storage engines</li><li>LSM</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/lsm-storage" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Thread Pool</h3>
+          <p>
+            A header-only C++ thread pool with futures and parallel_for: a
+            condition-variable producer-consumer with clean shutdown and exception
+            propagation. ~7.9x speedup on 12 cores.
+          </p>
+          <ul class="tags"><li>C++20</li><li>Concurrency</li><li>Futures</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/threadpool" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Rate Limiter</h3>
+          <p>
+            A thread-safe rate limiting library in Go: token bucket and two
+            sliding-window algorithms behind one interface, an injectable clock for
+            deterministic tests, and HTTP middleware with 429 + Retry-After.
+          </p>
+          <ul class="tags"><li>Go</li><li>Concurrency</li><li>Middleware</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/rate-limiter" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+      </div>
+
+      <h3 class="cat reveal">Cloud &amp; full-stack</h3>
+      <div class="grid">
+        <article class="card reveal">
+          <h3>Anchor Infra</h3>
+          <p>
+            Infrastructure as code that deploys and monitors Anchor RAG on AWS:
+            Terraform VPC, ECS Fargate behind a load balancer with autoscaling,
+            CI/CD via GitHub Actions with OIDC (no stored keys), Prometheus + Grafana.
+          </p>
+          <ul class="tags"><li>Terraform</li><li>AWS</li><li>CI/CD</li><li>Observability</li></ul>
+          <a class="card__link" href="https://github.com/abdullah-source/anchor-infra" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>QuantBridge</h3>
+          <p>
+            A hybrid microservices system pairing Python (scikit-learn) for
+            predictive modeling with Go/TypeScript services for low-latency
+            inference, plus full-stack analytics dashboards in Django and Vue.
+          </p>
+          <ul class="tags"><li>Python</li><li>Go</li><li>Django</li><li>ML</li></ul>
         </article>
       </div>
     </section>
